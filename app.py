@@ -64,4 +64,4 @@ def logout():
 if __name__ == "__main__":
     # Seguridad: nunca usar debug=True en producción
     debug_mode = os.getenv("FLASK_DEBUG", "False").lower() == "true"
-    app.run(host="0.0.0.0", port=5000, debug=debug_mode)
+    app.run(host="127.0.0.1", port=5000, debug=debug_mode)
